@@ -71,6 +71,7 @@ body {
   font-size: 2rem;
   background: transparent;
   border: none;
+  cursor: pointer;
   z-index: 15;
 }
 
