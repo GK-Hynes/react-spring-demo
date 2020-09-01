@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 
-export const Toggle = () => {
+const Toggle = () => {
   const [isToggled, setToggle] = useState(false);
   const { color, y } = useSpring({
     // opacity: isToggled ? 1 : 0,
@@ -27,3 +27,5 @@ export const Toggle = () => {
 };
 
 const AnimatedTitle = animated.h1;
+
+export default Toggle;
