@@ -33,7 +33,7 @@ const App = () => {
       </header>
       <main>
         <Toggle />
-        <Checkout isOpen={isNavOpen} />
+        {/* <Checkout isOpen={isNavOpen} /> */}
       </main>
     </animated.div>
   );

@@ -8,14 +8,19 @@ const Toggle = () => {
     // fontSize: isToggled ? "2rem" : "5em",
     // color: isToggled ? "#000" : "green",
     // transform: isToggled ? "translate3d(0,0,0)" : "translate3d(0, -50px, 0)",
-    y: isToggled ? 0 : -50
+    y: isToggled ? 0 : 1
   });
 
   return (
     <div>
       <AnimatedTitle
         style={{
-          transform: y.interpolate((y) => `translate3d(0, ${y}px, 0)`),
+          transform: y
+            .interpolate({
+              range: [0, 0.25, 0.5, 0.75, 1],
+              output: [0, -25, -50, 100, -50]
+            })
+            .interpolate((y) => `translate3d(0, ${y}px, 0)`),
           color
         }}
       >
