@@ -193,3 +193,13 @@ h1 {
 .full-height {
   height: 100vh;
 }
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--purp);
+  color: #fff;
+  font-size: 1.125rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
