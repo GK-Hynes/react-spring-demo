@@ -32,6 +32,7 @@ const App = () => {
       </header>
       <main>
         <Modal />
+        <Checkout isOpen={isNavOpen} />
       </main>
     </animated.div>
   );
