@@ -5,6 +5,7 @@ import Modal from "./Modal";
 import Checkout from "./Checkout";
 import Accordion from "./Accordion";
 import Waypoints from "./Waypoints";
+import Gesture from "./Gesture";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -31,12 +32,14 @@ const App = () => {
         <button className="menu-button" onClick={() => setNavOpen(!isNavOpen)}>
           Menu
         </button>
+        {/* <Nav style={navAnimation} /> */}
       </header>
       <main>
         <Modal />
         <Accordion />
         <Checkout isOpen={isNavOpen} />
-        <Waypoints />
+        {/* <Waypoints /> */}
+        <Gesture />
       </main>
     </animated.div>
   );

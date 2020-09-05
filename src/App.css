@@ -195,12 +195,15 @@ h1 {
 }
 
 button {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
+  margin: 20px;
+  padding: 6px 20px;
   border: none;
-  background-color: var(--purp);
-  color: #fff;
+  background-color: var(--teal);
+  color: var(--black);
   font-size: 1.125rem;
-  border-radius: 0.25rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px 0px;
 }
