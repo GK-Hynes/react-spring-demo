@@ -34,7 +34,7 @@ const ModalWrapper = () => {
             />
           )
       )}
-      <button onClick={() => toggle(!on)}>Open</button>
+      <button onClick={() => toggle(!on)}>Open Modal</button>
     </div>
   );
 };
